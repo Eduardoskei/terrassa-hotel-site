@@ -3,13 +3,16 @@ interface CardEmpresaProps {
   nome: string
   vagas: number
   corTexto: string
+  link: string
 }
 
-export function CardEmpresa({ logo, nome, vagas, corTexto }: CardEmpresaProps) {
+export function CardEmpresa({ logo, nome, vagas, corTexto, link}: CardEmpresaProps) {
   return (
-    <div className="bg-white rounded-xl p-4 mb-4 shadow-md max-w-full">
+    <div className="bg-white rounded-xl p-4 mb-4 shadow-md w-full max-w-md mx-auto">
       <div className="flex items-center gap-3 mb-2">
-        <img src={logo} alt={nome} className="w-12 h-12 object-contain" />
+        <a href={link} target="_blank">
+          <img src={logo} alt={nome} className="w-20 h-20 object-contain" />
+        </a>
         <h3 className="text-lg font-bold leading-tight break-words">
           {nome.split(' ').map((linha, index) => (
             <div key={index}>{linha}</div>
@@ -28,11 +31,11 @@ export function CardEmpresa({ logo, nome, vagas, corTexto }: CardEmpresaProps) {
         </svg>
         <span>{vagas} vagas disponíveis</span>
       </div>
-      <div className="flex flex-col sm:flex-row gap-2">
-        <button className="bg-blue-500 text-white w-full sm:w-auto px-4 py-2 rounded-lg text-center">
+      <div className="flex justify-evenly flex-col sm:flex-row gap-2">
+        <button className="bg-blue-500 hover:bg-blue-700 transition-colors text-white w-full sm:w-auto px-4 py-2 rounded-lg text-center cursor-pointer">
           🔍 Saber mais
         </button>
-        <button className="bg-green-500 text-white w-full sm:w-auto px-4 py-2 rounded-lg text-center">
+        <button className="bg-green-500 hover:bg-green-700 transition-colors text-white w-full sm:w-auto px-4 py-2 rounded-lg text-center cursor-pointer">
           📤 Enviar currículo
         </button>
       </div>
