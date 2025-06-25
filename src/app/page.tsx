@@ -13,28 +13,59 @@ export default function Home() {
           nome="Jacinto Supermercado"
           vagas={14}
           corTexto="text-green-600"
-          link='https://www.instagram.com/jacintosupermercados/'
+          link="https://www.instagram.com/jacintosupermercados/"
+          cargo="Operador(a) de Caixa"
+          salario="R$700,00"
+          requisitos={[
+            "Ensino médio completo",
+            "Boa comunicação",
+            "Disponibilidade para turnos"
+          ]}
         />
+
         <CardEmpresa
           logo="/atacarejo-logo.jpg"
-          nome="Seu atacarejo Amontada"
+          nome="Seu Atacarejo Amontada"
           vagas={6}
           corTexto="text-yellow-600"
-          link='https://www.instagram.com/seuatacarejoamontadaofc/'
+          link="https://www.instagram.com/seuatacarejoamontadaofc/"
+          cargo="Repositor(a) de Estoque"
+          salario="R$800,00"
+          requisitos={[
+            "Responsável e organizado",
+            "Ensino fundamental completo",
+            "Proatividade e espírito de equipe"
+          ]}
         />
+
         <CardEmpresa
-          logo='/amontadaValley-logo.jpg'
-          nome='Amontada Valley'
+          logo="/amontadaValley-logo.jpg"
+          nome="Amontada Valley"
           vagas={7}
-          corTexto='text-yellow-600'
-          link='https://www.instagram.com/amontada.valley/'
+          corTexto="text-yellow-600"
+          link="https://www.instagram.com/amontada.valley/"
+          cargo="Desenvolvedor(a) Front-End"
+          salario="R$ 1.500,00"
+          requisitos={[
+            "Conhecimento em HTML, CSS e JavaScript",
+            "Noções básicas de React.js",
+            "Habilidade para trabalhar em equipe"
+          ]}
         />
+
         <CardEmpresa
-          logo='/grills-logo.png'
-          nome='Grills Burguer'
+          logo="/grills-logo.png"
+          nome="Grills Burguer"
           vagas={3}
-          corTexto='text-red-600'
-          link='https://www.instagram.com/gri_lls_burger/'
+          corTexto="text-red-600"
+          link="https://www.instagram.com/gri_lls_burger/"
+          cargo="Chapeiro(a)"
+          salario="R$ 700,00"
+          requisitos={[
+            "Experiência em cozinha",
+            "Agilidade e organização",
+            "Responsabilidade com higiene"
+          ]}
         />
 
       </main>
